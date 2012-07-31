@@ -3,9 +3,9 @@
   "name": "vfs-local",
   "description": "VFS that delegates to standard 'path' and 'fs' modules",
   "version": "0.0.0",
-  "homepage": "https://github.com/andreyvit/vfs-local",
+  "homepage": "https://github.com/livereload/vfs-local",
   "repository": {
-    "url": "git://github.com/andreyvit/vfs-local"
+    "url": "git://github.com/livereload/vfs-local"
   },
   "main": "lib/index.js",
   "scripts": {
