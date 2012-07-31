@@ -13,6 +13,9 @@ class Monitor extends EventEmitter
 
 class LocalVFS
 
+  writeFile: (path, data, callback) ->
+    fs.writeFile path, data, callback
+
   watch: (path) ->
     new Monitor(path)
 
