@@ -20,4 +20,4 @@ class LocalVFS
     new Monitor(path)
 
 module.exports = new LocalVFS()  # the one and only copy
-
+module.exports.LocalVFS = LocalVFS
