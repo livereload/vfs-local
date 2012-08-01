@@ -16,6 +16,9 @@ class LocalVFS
   writeFile: (path, data, callback) ->
     fs.writeFile path, data, callback
 
+  readFile: (path, encoding, callback) ->
+    fs.readFile path, encoding, callback
+
   watch: (path) ->
     new Monitor(path)
 
