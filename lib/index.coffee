@@ -22,5 +22,9 @@ class LocalVFS
   watch: (path) ->
     new Monitor(path)
 
+  isSubpath: (superpath, subpath) ->
+    subpath = "#{subpath}/" unless subpath[subpath.length - 1] is '/'
+    return (subpath.length >= superpath.length) and (subpath.substr(0, superpath.length) == superpath)
+
 module.exports = new LocalVFS()  # the one and only copy
 module.exports.LocalVFS = LocalVFS
